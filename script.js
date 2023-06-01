@@ -18,3 +18,18 @@ while (cont<=Number(nuser)) {
     }
 }
 //EJERCICIO 2
+nuser=prompt("ingrese un numero entre 1 y 50: ");
+let nuser2=prompt("ingrese otro numero entre 1 y 50: ");
+cont=1;
+while (cont<=50) {
+    if (cont===Number(nuser)) {
+        console.log("¡Lotería!"+cont)
+        cont++;
+    }else if (cont===Number(nuser2)) {
+        console.log("¡Lotería!"+cont)
+        cont++;
+    }else{
+        console.log(cont)
+        cont++;
+    }
+}
