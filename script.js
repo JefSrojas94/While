@@ -33,3 +33,11 @@ while (cont<=50) {
         cont++;
     }
 }
+//EJERCICIO 3
+const list=[];
+nuser=prompt("ingrese un numero (0 para terminar):")
+while (Number(nuser)!=0) {
+    nuser=prompt("ingrese un numero (0 para terminar):")
+    list.push(nuser);
+}
+console.log(list);
