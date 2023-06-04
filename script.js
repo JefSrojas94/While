@@ -37,7 +37,11 @@ while (cont<=50) {
 const list=[];
 nuser=prompt("ingrese un numero (0 para terminar):")
 while (Number(nuser)!=0) {
+    if (isNaN(Number(nuser))) {
+        alert("Debe ingresar solo numeros");
+    }else{
+        list.push(nuser);
+    }
     nuser=prompt("ingrese un numero (0 para terminar):")
-    list.push(nuser);
 }
 console.log(list);
