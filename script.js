@@ -45,3 +45,15 @@ while (Number(nuser)!=0) {
     nuser=prompt("ingrese un numero (0 para terminar):")
 }
 console.log(list);
+//EJ 4
+const listlet=[];
+let letuser=prompt("ingrese una letra (vacio para terminar):")
+while (letuser!=undefined) {
+    if (isNaN(Number(letuser))) {
+        list.push(letuser);
+    }else{
+        alert("Debe ingresar solo letras");
+    }
+    nuser=prompt("ingrese una letra (vacio para terminar):")
+}
+console.log(list);
