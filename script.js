@@ -36,8 +36,8 @@ while (cont<=50) {
 //EJERCICIO 3
 const list=[];
 nuser=prompt("ingrese un numero (0 para terminar):")
-while (Number(nuser)!=0) {
-    if (isNaN(Number(nuser))) {
+while (parseInt(nuser)!=0) {
+    if (isNaN(parseInt(nuser))) {
         alert("Debe ingresar solo numeros");
     }else{
         list.push(nuser);
@@ -46,14 +46,15 @@ while (Number(nuser)!=0) {
 }
 console.log(list);
 //EJ 4
-const listlet=[];
-let letuser=prompt("ingrese una letra (vacio para terminar):")
-while (letuser!=undefined) {
-    if (isNaN(Number(letuser))) {
+const pallist=[];
+ let letuser=prompt("ingrese una letra (vacio para terminar):")
+while (letuser!=="") {
+    if (isNaN(parseInt(letuser))) {
         list.push(letuser);
     }else{
-        alert("Debe ingresar solo letras");
+        alert("Debe ingresar solo palabras o letras");
     }
     nuser=prompt("ingrese una letra (vacio para terminar):")
 }
-console.log(list);
+console.log(pallist); 
+//EJ 5
