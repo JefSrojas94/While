@@ -45,16 +45,16 @@ while (parseInt(nuser)!=0) {
     nuser=prompt("ingrese un numero (0 para terminar):")
 }
 console.log(list);
-//EJ 4
-const pallist=[];
+//EJERCICIO 4
+let cadena="";
  let letuser=prompt("ingrese una letra (vacio para terminar):")
 while (letuser!=="") {
     if (isNaN(parseInt(letuser))) {
-        list.push(letuser);
+        cadena = cadena +" "+ letuser;
     }else{
         alert("Debe ingresar solo palabras o letras");
     }
-    nuser=prompt("ingrese una letra (vacio para terminar):")
+    letuser=prompt("ingrese una letra (vacio para terminar):")
 }
-console.log(pallist); 
-//EJ 5
+console.log(cadena); 
+//EJERCICIO 5
