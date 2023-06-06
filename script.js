@@ -58,3 +58,23 @@ while (letuser!=="") {
 }
 console.log(cadena); 
 //EJERCICIO 5
+let dia=prompt("digite un dia de la semana: ");
+while (dia!="domingo") {
+    
+
+    if(dia==="lunes"){
+        alert("Feliz inicio de Semana!!!");
+    }else if(dia==="viernes"){
+        alert("Feliz fin de Semana!!!");
+    }else if(dia==="sabado"||dia==="domingo"){
+        alert("A DESCANSAR AMIGO LO HICISTE BIEN ESTA SEMANA!!!!!!!!");
+    }else if(dia==="martes"){
+        alert("ya dos dias!!!");
+    }else if(dia==="miercoles"){
+        alert("ya tres dias!!!");
+    }else if(dia==="jueves"){
+        alert("ya casi terminas!!!");
+    }
+    dia=prompt("digite un dia de la semana: ");
+}
+alert("Ve a descansar")
